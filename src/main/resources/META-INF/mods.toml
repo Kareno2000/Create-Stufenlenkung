@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion=">=47.1"
+license="MIT"
+[[mods]]
+modId="steeringaddon"
+version="1.0.0"
+displayName="Steering Addon"
+description='''
+Adds a steering controller block that reads redstone strength and sets the angle of attached Create mechanical bearings (front track steering).
+'''
