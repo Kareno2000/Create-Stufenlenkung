@@ -27,9 +27,9 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      # Gradle Build ausführen
+      # Gradle Build ausführen im No-Daemon-Modus und mit genügend Speicher
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build --no-daemon -Dorg.gradle.jvmargs="-Xmx1024m"
 
       # Die gebaute JAR als Artefakt hochladen (Version v4)
       - name: Upload JAR artifact
